@@ -1,0 +1,27 @@
+{
+  "name": "supavec",
+  "private": true,
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build",
+    "build:api": "turbo build --filter=@supavec/api",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "@turbo/gen": "2.5.3",
+    "prettier": "^3.1.1",
+    "turbo": "^2.5.4"
+  },
+  "packageManager": "npm@10.9.2",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "dependencies": {
+    "@mdx-js/loader": "^3.1.0",
+    "@mdx-js/react": "^3.1.0",
+    "@next/mdx": "^15.2.1",
+    "@types/mdx": "^2.0.13"
+  }
+}

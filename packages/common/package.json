@@ -1,0 +1,27 @@
+{
+  "name": "@supavec/common",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "type": "module",
+  "sideEffects": false,
+  "license": "MIT",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "exports": {
+    "./usage": {
+      "types": "./src/usage.ts",
+      "default": "./dist/usage.js"
+    }
+  },
+  "devDependencies": {
+    "eslint": "^8.52.0",
+    "typescript": "^5.2.2"
+  }
+}
